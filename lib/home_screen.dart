@@ -49,14 +49,16 @@ class HomeScreen extends StatelessWidget {
                 width: MediaQuery.of(context).size.width * 0.6,
                 child: ElevatedButton(
                   style: ButtonStyle(
-                      backgroundColor:
-                          const MaterialStatePropertyAll(Colors.red),
-                      foregroundColor:
-                          const MaterialStatePropertyAll(Colors.white),
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                          RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.r),
-                              side: const BorderSide(color: Colors.red)))),
+                    backgroundColor: const MaterialStatePropertyAll(Colors.red),
+                    foregroundColor:
+                        const MaterialStatePropertyAll(Colors.white),
+                    shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                      RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(8.r),
+                        side: const BorderSide(color: Colors.red),
+                      ),
+                    ),
+                  ),
                   onPressed: () {},
                   child: Text(
                     "Try Again",
